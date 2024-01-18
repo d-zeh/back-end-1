@@ -7,3 +7,9 @@ app.use(cors());
 app.use(express.json());
 
 app.listen(4000, () => console.log("Server running on 4000"));
+
+app.get('/api/users' (req,res) => {
+    let friends = ["Nitin", "Eric", "Jeddy", "Cameron", "Riley"];
+    res.status(200).send(friends)
+
+})
